@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   App.loadSongs().then(function(songList){
     console.log(songList)
-    App.insertSongs(songList, "firstSongs", "deleteBtn1")
+    App.insertSongs(songList, "firstSongs")
   })
   .catch(function() {
     console.log( "error" );
@@ -14,7 +14,7 @@ $(document).ready(function(){
     $('.more').click((e)=>{
       App.loadMoreSongs()
       .then(function(moreSongs){
-        App.insertSongs(moreSongs, "secondSongs", "deleteBtn2")
+        App.insertSongs(moreSongs, "secondSongs")
           $('.more').hide()
           $('#songContainer').append("<button class='less songButton'> < Less </button>");
           console.log("less button created")
@@ -23,22 +23,13 @@ $(document).ready(function(){
   })
   .then(function(){
     $('#songContainer').on('click', '.less', (e)=>{
-      console.log("clicked")
       $('.secondSongs').remove()
       $('.less').hide()
       $('.more').show()
     })
   })
   .then(function(){
-    $('.deleteBtn1').click((e)=>{
-      console.log(e)
-      console.log(e.target.parentElement)
-      $(e.target.parentElement).remove()
-    })
-  })
-  .then(function(){
-    $('#songContainer').on("click", ".deleteBtn2", (e)=>{
-      console.log(e)
+    $('#songContainer').on('click', '.deleteBtn', (e)=>{
       console.log(e.target.parentElement)
       $(e.target.parentElement).remove()
     })

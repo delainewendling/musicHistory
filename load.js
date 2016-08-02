@@ -11,14 +11,14 @@ var App = (function (app) {
       return res.songs;
     })
   },
-  app.insertSongs = function (songList, className, button) {
+  app.insertSongs = function (songList, className) {
       return songList.forEach(function(song){
        $('#songContainer').append(`<div class="${className}">
           <h2> ${song.songTitle} </h2>
           <span class="songStats"> ${song.artist} | </span>
           <span class="songStats"> ${song.album} | </span>
           <span class="songStats"> ${song.genre} </span>
-        <button class="${button} deleteBtn"> Delete </button>
+        <button class="deleteBtn"> Delete </button>
         </div>`)
      })
   },
