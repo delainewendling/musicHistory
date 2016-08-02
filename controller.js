@@ -1,21 +1,35 @@
 $(document).ready(function(){
 
   App.loadSongs().then(function(songList){
-    console.log("loaded")
-
-    songList.forEach(function(song){
-      $('#songContainer').append(`<div class="song">
+    console.log(songList)
+    app.insertSongs(songList, "firstSongs")
+  })
+  .then(function() {
+    $('#songContainer').append("<button class='more songButton'> More > </button>");
+  })
+  .then(function(){
+    $('.more').click((e)=>{
+      App.loadMoreSongs()
+      .then(function(moreSongs){
+        moreSongs.forEach(function(song){
+           $('#songContainer').append(`<div class="song">
         <h2> ${song.songTitle} </h2>
         <span class="songStats"> ${song.artist} | </span>
         <span class="songStats"> ${song.album} | </span>
         <span class="songStats"> ${song.genre} </span>
       <button class="deleteBtn"> Delete </button>
-      </div>`);
+      </div>`)
+        })
+      $('.more').hide()
+      $('#songContainer').append("<button class='less songButton'> < Less </button>");
+      })
     })
   })
-  .then(function() {
-    $('#songContainer').append("<button class='more'> More > </button>");
-  })
+  // .then(function(){
+  //   $('.less').click((e)=>{
+
+  //   })
+  // })
   .then(function(){
     $('.deleteBtn').click((e)=>{
       console.log(e.target.parentElement)
@@ -23,38 +37,18 @@ $(document).ready(function(){
       // console.log(e.parentElement)
     })
   })
+  .then(function(){
+    $('.navBar li').click((e)=>{
+      console.log(e.target.hash)
+      $('.page').addClass("hidden")
+        App.showPage(e.target.hash);
+    })
+  })
   .fail(function() {
     console.log( "error" );
   })
-
 })
 
-
-
-// var nav = document.querySelectorAll(".navBar li");
-// // console.log(nav)
-// var pages = document.querySelectorAll(".page");
-// for (let i=0; i<nav.length; i++) {
-//   nav[i].addEventListener("click", (e) => {
-//     //This for loop will add the class of hidden to all of the elements with the class page.
-//     for (let j=0; j<pages.length; j++) { //Need new variable if this is inside the function above. If not, this can be i again.
-//       pages[j].classList.add("hidden");
-//     }
-//     showPage(e.target.hash);
-//   })
-// }
-
-// function showPage (id) {
-//   if (id) { //empty string is falsey so if hash is empty it will be false, otherwise it will be true
-//       document.querySelector(id).classList.remove("hidden");
-//       document.getElementById("addMusic").classList.add("selected")
-//       document.getElementById("listMusic").classList.remove("selected")
-//     } else {
-//       document.querySelector("#listMusicView").classList.remove("hidden");
-//       document.getElementById("listMusic").classList.add("selected")
-//       document.getElementById("addMusic").classList.remove("selected")
-//     }
-// }
 
 
 
@@ -80,7 +74,7 @@ $(document).ready(function(){
 // var removeChar = []
 // for(i=0; i<songs.length; i++) {
 //   console.log(songs[i]);
-//   // removeChar.push(songs[i].replace(/[^a-z0-9\s\>]/gi, ""));
+//   removeChar.push(songs[i].replace(/[^a-z0-9\s\>]/gi, ""));
 // }
 // console.log(removeChar)
 
