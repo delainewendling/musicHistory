@@ -2,7 +2,10 @@ $(document).ready(function(){
 
   App.loadSongs().then(function(songList){
     console.log(songList)
-    app.insertSongs(songList, "firstSongs")
+    App.insertSongs(songList, "firstSongs", "deleteBtn1")
+  })
+  .catch(function() {
+    console.log( "error" );
   })
   .then(function() {
     $('#songContainer').append("<button class='more songButton'> More > </button>");
@@ -11,30 +14,33 @@ $(document).ready(function(){
     $('.more').click((e)=>{
       App.loadMoreSongs()
       .then(function(moreSongs){
-        moreSongs.forEach(function(song){
-           $('#songContainer').append(`<div class="song">
-        <h2> ${song.songTitle} </h2>
-        <span class="songStats"> ${song.artist} | </span>
-        <span class="songStats"> ${song.album} | </span>
-        <span class="songStats"> ${song.genre} </span>
-      <button class="deleteBtn"> Delete </button>
-      </div>`)
-        })
-      $('.more').hide()
-      $('#songContainer').append("<button class='less songButton'> < Less </button>");
+        App.insertSongs(moreSongs, "secondSongs", "deleteBtn2")
+          $('.more').hide()
+          $('#songContainer').append("<button class='less songButton'> < Less </button>");
+          console.log("less button created")
       })
     })
   })
-  // .then(function(){
-  //   $('.less').click((e)=>{
-
-  //   })
-  // })
   .then(function(){
-    $('.deleteBtn').click((e)=>{
+    $('#songContainer').on('click', '.less', (e)=>{
+      console.log("clicked")
+      $('.secondSongs').remove()
+      $('.less').hide()
+      $('.more').show()
+    })
+  })
+  .then(function(){
+    $('.deleteBtn1').click((e)=>{
+      console.log(e)
       console.log(e.target.parentElement)
       $(e.target.parentElement).remove()
-      // console.log(e.parentElement)
+    })
+  })
+  .then(function(){
+    $('#songContainer').on("click", ".deleteBtn2", (e)=>{
+      console.log(e)
+      console.log(e.target.parentElement)
+      $(e.target.parentElement).remove()
     })
   })
   .then(function(){
@@ -43,9 +49,6 @@ $(document).ready(function(){
       $('.page').addClass("hidden")
         App.showPage(e.target.hash);
     })
-  })
-  .fail(function() {
-    console.log( "error" );
   })
 })
 

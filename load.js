@@ -11,16 +11,14 @@ var App = (function (app) {
       return res.songs;
     })
   },
-   app.insertSongs = function (songList, className) {
-    console.log("parameter 1", songlist)
-    console.log("class name", className)
-      songList.forEach(function(song){
+  app.insertSongs = function (songList, className, button) {
+      return songList.forEach(function(song){
        $('#songContainer').append(`<div class="${className}">
           <h2> ${song.songTitle} </h2>
           <span class="songStats"> ${song.artist} | </span>
           <span class="songStats"> ${song.album} | </span>
           <span class="songStats"> ${song.genre} </span>
-        <button class="deleteBtn"> Delete </button>
+        <button class="${button} deleteBtn"> Delete </button>
         </div>`)
      })
   },
@@ -32,7 +30,8 @@ var App = (function (app) {
       $("#listMusic").removeClass("selected")
     } else {
       console.log("inside else", id)
-      $("#listMusicView").removeClass("hidden").addClass("selected")
+      $("#listMusicView").removeClass("hidden")
+      $("#listMusic").addClass("selected")
       $("#addMusic").removeClass("selected")
       }
     }
