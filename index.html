@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<article>
+<header>
+<!-- Navigation Bar -->
+  <nav class="navBar">
+    <ul>
+      <li> <a href="#" id="listMusic"> List Music | </a> </li>
+      <li> <a href="#addMusicView" id="addMusic"> Add Music </a></li>
+    </ul>
+  </nav>
+</header>
+<article id="addMusicView" class="page hidden">
+  <section class="addSongs">
+    <label for="songName" class="first"> Song Name: </label>
+    <input type="text" name="songName" id="songName" class="first"> 
+    <label for="artist" class="second"> Artist: </label>
+    <input type="text" name="artist" id="artist" class="second"> 
+    <label for="album" class="third"> Album: </label>
+    <input type="text" name="album" id="album" class="third"> 
+    <button id="submit" class="clearfix button"> Add </button>
+  </section>
+</article>
+
+<!-- Blue left side bar that allows user to select artist, album, etc -->
+<article id="listMusicView" class="page">
+  <section class="songSelection">
+    <form action="" class="songForm">
+    <!-- Song Length -->
+      <label for="songLength" class="label"> Song length: </label>
+      <input type="range" name="songLength" id="songLength" class="field"> <br>
+      <!-- Artist Options -->
+      <label for="artist" class="label"> Artist: </label>
+      <select id="artist" name="artist" class="field">
+        <option value="FGL"> Florida Georgia Line </option>
+        <option value="jonBellion"> Jon Bellion </option>
+        <option value="coldplay"> Coldplay </option>
+        <option value="taylorSwift"> Taylor Swift </option>
+        <option value="hillsong"> Hillsong United</option>
+      </select> <br>
+      <!-- Album Options -->
+      <label for="album" class="label"> Album: </label>
+      <select id="album" name="album" class="field">
+        <!-- FGL Albums -->
+        <option value="album1" class="FGL"> Here's to the Good Times </option>
+        <option value="album2" class="FGL"> Anything Goes </option>
+        <option value="album3" class="FGL"> Dig Your Roots </option>
+        <!-- Jon Bellion Albums  -->
+        <option value="album1" class="jonBellion"> The Definition </option>
+        <option value="album2" class="jonBellion"> The Human Condition  </option>
+        <!-- Coldplay Albums -->
+        <option value="album1" class="coldplay"> Parachutes </option>
+        <option value="album2" class="coldplay"> A Rush of Blood to the Head </option>
+        <option value="album3" class="coldplay"> X&amp;Y </option>
+        <option value="album4" class="coldplay"> Viva la Vida </option>
+        <option value="album5" class="coldplay"> Mylo Xyloto </option>
+        <option value="album6" class="coldplay"> Ghost Stories </option>
+        <option value="album7" class="coldplay"> A Head Full of Dreams </option>
+        <!-- Taylor Swift Albums -->
+        <option value="album1" class="taylorSwift"> Fearless </option>
+        <option value="album2" class="taylorSwift"> Speak Now </option>
+        <option value="album3" class="taylorSwift"> Red </option>
+        <option value="album4" class="taylorSwift"> 1989 </option>
+        <!-- Hillsong United Albums -->
+        <option value="album1" class="hillsong"> Aftermath </option>
+        <option value="album2" class="hillsong"> Zion </option>
+        <option value="album3" class="hillsong"> Empires </option>
+      </select> <br>
+      <!-- Genre Options -->
+      <label class="label clearfix"> Genre: </label>
+      <!-- These should be on the left -->
+      <div class="left">
+      <input type="checkbox" name="rock" id="rock">
+      <label for="rock" value="rock"> Rock </label> <br>
+      <input type="checkbox" name="pop" id="pop">
+      <label for="pop" value="pop"> Pop </label> <br>
+      <input type="checkbox" name="country" id="country">
+      <label for="country" value="country"> Country </label>
+      </div>
+      <!-- These should be on the right -->
+      <div class="right">
+      <input type="checkbox" name="alternative" id="alternative">
+      <label for="alternative" value="alternative"> Alternative </label> <br>
+      <input type="checkbox" name="classical" id="classical">
+      <label for="christian" value="classical"> Christian </label> <br>
+      <input type="checkbox" name="hip_hop" id="hip_hop">
+      <label for="hip_hop" value="hip_hop"> Hip Hop </label>
+      </div>
+      <button type="submit" class="clearfix button"> Filter </button>
+    </form>
+  </section>
+ <!-- This section shows the songs -->
+  <section id="songContainer" class="songs">
+
+  </section>
+</article>
+<footer></footer>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="load.js"></script>
+<script type="text/javascript" src="songList.js"></script>
+</body>
+</html>
