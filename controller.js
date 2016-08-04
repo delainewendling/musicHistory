@@ -36,22 +36,18 @@ $(document).ready(function(){
   })
   .then(function(){
     $('.navBar li').click((e)=>{
-      console.log(e.target.hash)
       $('.page').addClass("hidden")
         App.showPage(e.target.hash);
+    })
+  })
+  .then(function(){
+    $("#submit").click((e)=>{
+
     })
   })
 })
 
 
-
-
-// <h2> Smooth </h2>
-//       <ul class="songStats">
-//         <li> FGL | </li>
-//         <li> Dig Your Roots | </li>
-//         <li> Country </li>
-//       </ul>
 
 // var songContainer = document.getElementById("songContainer");
 

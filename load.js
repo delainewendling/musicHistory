@@ -35,6 +35,9 @@ var App = (function (app) {
       $("#addMusic").removeClass("selected")
       }
     }
+    app.formFields = function(){
+      
+    }
   return app
 })(App || {})
 
