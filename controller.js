@@ -3,15 +3,16 @@ $(document).ready(function(){
   App.loadSongs()
   .then(function(songList){
     console.log(songList)
-    App.insertSongs(songList, "firstSongs")
-    $("#submit").click((e)=>{
-      console.log("from click", songList)
-      App.userSong(songList)
-      $("#addMusicView").addClass("hidden")
-      $("#listMusicView").removeClass("hidden")
-      $("#listMusic").addClass("selected")
-      $("#addMusic").removeClass("selected")
-    })
+    App.insertSongs(songList)
+  // .then(function(){
+  //      $("#submit").click((e)=>{
+  //     console.log("from click", songList)
+  //     App.userSong(songs)
+  //     $("#addMusicView").addClass("hidden")
+  //     $("#listMusicView").removeClass("hidden")
+  //     $("#listMusic").addClass("selected")
+  //     $("#addMusic").removeClass("selected")
+  //   })
   })
   .catch(function() {
     console.log( "error" );

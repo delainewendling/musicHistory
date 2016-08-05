@@ -100,22 +100,23 @@
     </form>
   </section>
  <!-- This section shows the songs -->
-  <section class="songs">
-    <script id="songContainer" type="text/template">
-      <div class="{{className}}">
-          {{#song}}
-          <h2> {{song.songTitle}} </h2>
-          <span class="songStats"> {{song.artist}} | </span>
-          <span class="songStats"> {{song.album}} | </span>
-          <span class="songStats"> {{song.genre}} </span>
+  <section class="songs" id="songContainer">
+    <script id="songTemplate" type="text/mustache">
+       <div class="songList">
+        {{#songs}}
+        <h2> {{songTitle}} </h2>
+        <span class="songStats"> {{artist}} | </span>
+        <span class="songStats"> {{album}} | </span>
+        <span class="songStats"> {{genre}} </span>
         <button class="deleteBtn"> Delete </button>
-        {{/song}}
+        {{/songs}}
       </div>
     </script>
   </section>
 </article>
 <footer></footer>
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/mustache.js/mustache.min.js"></script>
 <script type="text/javascript" src="load.js"></script>
 <script type="text/javascript" src="controller.js"></script>
 </body>

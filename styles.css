@@ -128,7 +128,7 @@ body {
   font-size: 1em;
   background-color: #DFDFDF;
 }
-.songStats:nth-child(4n+1) {
+span.songStats:nth-of-type(3n+1) {
   display: inline-block;
   margin-left: 20px;
 }

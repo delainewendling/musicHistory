@@ -1,23 +1,23 @@
 var App = (function (app) {
 
-  var $template = $("#songContainer").html()
+  var $template = $("#songTemplate").html()
+  var $target = $("#songContainer")
   //Grabbing data from JSON files and returning it in the form of arrays
   app.loadSongs = function () {
     return $.getJSON("songInfo.json")
     .then(function (res) {
-      return res.songs;
+      return res;
     })
   },
   app.loadMoreSongs = function () {
     return $.getJSON('moreSongs.json')
     .then(function(res){
-      return res.songs;
+      return res;
     })
   },
-  app.insertSongs = function (songList, className) {
-      return 
-        
-     })
+  app.insertSongs = function (songList) {
+      var rendered = Mustache.to_html($template, songList);
+      $target.html(rendered);
   },
   app.showPage = function(id){
     if(id) {
