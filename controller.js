@@ -44,12 +44,6 @@ $(document).ready(function(){
       $(e.target.parentElement).remove()
     })
   })
-  .then(function(){
-    $('.navBar li').click((e)=>{
-      $('.page').addClass("hidden")
-        App.showPage(e.target.hash);
-    })
-  })
 })
 
 
