@@ -103,11 +103,13 @@
   <section class="songs">
     <script id="songContainer" type="text/template">
       <div class="{{className}}">
+          {{#song}}
           <h2> {{song.songTitle}} </h2>
           <span class="songStats"> {{song.artist}} | </span>
           <span class="songStats"> {{song.album}} | </span>
           <span class="songStats"> {{song.genre}} </span>
         <button class="deleteBtn"> Delete </button>
+        {{/song}}
       </div>
     </script>
   </section>

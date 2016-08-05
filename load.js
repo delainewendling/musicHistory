@@ -1,5 +1,7 @@
 var App = (function (app) {
 
+  var $template = $("#songContainer").html()
+  //Grabbing data from JSON files and returning it in the form of arrays
   app.loadSongs = function () {
     return $.getJSON("songInfo.json")
     .then(function (res) {
@@ -13,14 +15,8 @@ var App = (function (app) {
     })
   },
   app.insertSongs = function (songList, className) {
-      songList.forEach(function(song, index){
-       $('#songContainer').append(`<div class="${className}">
-          <h2> ${song.songTitle} </h2>
-          <span class="songStats"> ${song.artist} | </span>
-          <span class="songStats"> ${song.album} | </span>
-          <span class="songStats"> ${song.genre} </span>
-        <button class="deleteBtn"> Delete </button>
-        </div>`)
+      return 
+        
      })
   },
   app.showPage = function(id){
