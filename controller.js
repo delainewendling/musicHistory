@@ -2,23 +2,10 @@ $(document).ready(function(){
 
   App.loadSongs()
   .then(function(songList){
-    console.log(songList)
     App.insertSongs(songList)
-  // .then(function(){
-  //      $("#submit").click((e)=>{
-  //     console.log("from click", songList)
-  //     App.userSong(songs)
-  //     $("#addMusicView").addClass("hidden")
-  //     $("#listMusicView").removeClass("hidden")
-  //     $("#listMusic").addClass("selected")
-  //     $("#addMusic").removeClass("selected")
-  //   })
   })
   .catch(function() {
     console.log( "error" );
-  })
-  .then(function() {
-    $('#songContainer').append("<button class='more songButton'> More > </button>");
   })
   .then(function(){
     $('.more').click((e)=>{

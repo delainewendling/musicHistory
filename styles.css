@@ -122,6 +122,7 @@ body {
   color: white;
 }
 .songButton {
+  display: block;
   border: 2px solid black;
   border-radius: 3px;
   margin: 20px;
