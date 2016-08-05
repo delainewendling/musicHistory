@@ -1,4 +1,5 @@
 var App = (function (app) {
+
   app.loadSongs = function () {
     return $.getJSON("songInfo.json")
     .then(function (res) {
@@ -12,7 +13,7 @@ var App = (function (app) {
     })
   },
   app.insertSongs = function (songList, className) {
-      return songList.forEach(function(song){
+      songList.forEach(function(song, index){
        $('#songContainer').append(`<div class="${className}">
           <h2> ${song.songTitle} </h2>
           <span class="songStats"> ${song.artist} | </span>
@@ -35,8 +36,15 @@ var App = (function (app) {
       $("#addMusic").removeClass("selected")
       }
     }
-    app.formFields = function(){
-      
+    app.userSong = function(songList){
+      console.log(songList)
+      var songTitle = $("#songName").val()
+      var artist = $("#artist").val()
+      var album = $("#album").val()
+      var genre = $("#genre").val()
+      songList.push({"songTitle": songTitle, "artist": artist, "album": album, "genre": genre})
+      $("#songContainer").html=""
+      App.insertSongs(songList, "firstSongs")
     }
   return app
 })(App || {})

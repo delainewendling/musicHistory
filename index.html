@@ -26,6 +26,8 @@
     <input type="text" name="artist" id="artist" class="second"> 
     <label for="album" class="third"> Album: </label>
     <input type="text" name="album" id="album" class="third"> 
+    <label for="genre" class="third"> Genre: </label>
+    <input type="text" name="genre" id="genre" class="third">
     <button id="submit" class="clearfix button"> Add </button>
   </section>
 </article>
@@ -98,8 +100,16 @@
     </form>
   </section>
  <!-- This section shows the songs -->
-  <section id="songContainer" class="songs">
-
+  <section class="songs">
+    <script id="songContainer" type="text/template">
+      <div class="{{className}}">
+          <h2> {{song.songTitle}} </h2>
+          <span class="songStats"> {{song.artist}} | </span>
+          <span class="songStats"> {{song.album}} | </span>
+          <span class="songStats"> {{song.genre}} </span>
+        <button class="deleteBtn"> Delete </button>
+      </div>
+    </script>
   </section>
 </article>
 <footer></footer>

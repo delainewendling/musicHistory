@@ -1,8 +1,17 @@
 $(document).ready(function(){
 
-  App.loadSongs().then(function(songList){
+  App.loadSongs()
+  .then(function(songList){
     console.log(songList)
     App.insertSongs(songList, "firstSongs")
+    $("#submit").click((e)=>{
+      console.log("from click", songList)
+      App.userSong(songList)
+      $("#addMusicView").addClass("hidden")
+      $("#listMusicView").removeClass("hidden")
+      $("#listMusic").addClass("selected")
+      $("#addMusic").removeClass("selected")
+    })
   })
   .catch(function() {
     console.log( "error" );
@@ -38,11 +47,6 @@ $(document).ready(function(){
     $('.navBar li').click((e)=>{
       $('.page').addClass("hidden")
         App.showPage(e.target.hash);
-    })
-  })
-  .then(function(){
-    $("#submit").click((e)=>{
-
     })
   })
 })
