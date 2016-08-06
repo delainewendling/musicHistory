@@ -4,10 +4,6 @@ var App = (function(app){
   var $template = $target.find("#songTemplate").html()
   //cache variables for form
   var $songForm = $(".addSongs")
-  var $songTitle = $songForm.find("#songName").val()
-  var $artist = $songForm.find("#artist").val()
-  var $album= $songForm.find("#album").val()
-  var $genre = $songForm.find("#genre").val()
   var $submitButton = $songForm.find("#submit");
   //cache variables for navigation
   var $navBarElements = $('.navBar li')
@@ -16,17 +12,18 @@ var App = (function(app){
 
   //Bind events
   $navBarElements.on('click', hidePages)
-  $submitButton.on('click', app.userSong)
+  $submitButton.on('click', addSong)
 
-  function userSong (songList){
-      console.log("button clicked!")
-      console.log(songList)
-      songList.songs.push({"songTitle": $songTitle, "artist": $artist, "album": $album, "genre": $genre})
-      console.log("after push", songList)
-      // $("#songContainer").html("")
-      // // $songForm.find('input').val("")
-      // App.insertSongs(songList)
-      // App.goHome()
+  function addSong (){
+      var $songTitle = $songForm.find("#songName").val()
+      var $artist = $songForm.find("#artist").val()
+      var $album= $songForm.find("#album").val()
+      var $genre = $songForm.find("#genre").val()
+      app.getSongs().push({"songTitle": $songTitle, "artist": $artist, "album": $album, "genre": $genre})
+      $target.html("")
+      $('input').val("")
+      App.insertSongs()
+      App.goHome()
   }
 
   //private function
