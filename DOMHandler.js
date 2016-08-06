@@ -1,5 +1,5 @@
 var App = (function(app){
-    //cache variables for DOM printout
+  //cache variables for DOM printout
   var $target = $("#songContainer")
   var $template = $target.find("#songTemplate").html()
   //cache variables for form
@@ -9,8 +9,14 @@ var App = (function(app){
   var $album= $songForm.find("#album").val()
   var $genre = $songForm.find("#genre").val()
   var $submitButton = $songForm.find("#submit");
-  //Grabbing data from JSON files and returning it in the form of arrays
-  $submitButton.on('click', userSong(songList))
+  //cache variables for navigation
+  var $navBarElements = $('.navBar li')
+  var $addMusic = $navBarElements.find("#addMusic")
+  var $listMusic = $navBarElements.find("#listMusic")
+
+  //Bind events
+  $navBarElements.on('click', hidePages)
+  $submitButton.on('click', app.userSong)
 
   function userSong (songList){
       console.log("button clicked!")
@@ -22,18 +28,6 @@ var App = (function(app){
       // App.insertSongs(songList)
       // App.goHome()
   }
-  app.insertSongs = function (songList) {
-      var rendered = Mustache.to_html($template, songList);
-      $target.html(rendered);
-  }
-  console.log("inside show page", app)
-  //cache DOM elements
-  var $navBarElements = $('.navBar li')
-  var $addMusic = $navBarElements.find("#addMusic")
-  var $listMusic = $navBarElements.find("#listMusic")
-
-  //Bind events
-  $navBarElements.on('click', hidePages)
 
   //private function
   function hidePages (e){
@@ -41,7 +35,12 @@ var App = (function(app){
     app.showPage(e.target.hash);
   }
 
-   app.goHome = function(){
+  app.insertSongs = function () {
+      var rendered = Mustache.to_html($template, app.getResult());
+      $target.html(rendered);
+  }
+
+  app.goHome = function(){
       $('#listMusicView').removeClass("hidden")
       $('#addMusicView').addClass("hidden")
       $listMusic.addClass("selected")
