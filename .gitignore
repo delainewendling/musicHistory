@@ -36,4 +36,6 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-bower_components
+lib/bower_components
+lib/node_modules
+dist
