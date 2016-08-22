@@ -27,8 +27,7 @@ body {
 /****************************/
 .navBar {
   background-color: #FFB4B0;
-  width: 85%;
-  margin: 20px auto 10px;
+  margin: 15px;
   height: 53px;
   border: black solid 2px;
 }
@@ -53,11 +52,9 @@ body {
 /****************************/
 
 .songSelection {
-  float: left;
+/*  float: left;*/
   background-color: #4DD7FA;
-  width: 25%;
   border: black solid 2px;
-  margin-left: 7.5%;
   min-height: 401px;
 }
 
@@ -69,39 +66,17 @@ body {
   display: block;
 }
 
-.field {
+/*.field {
   margin-bottom: 15px;
-}
-
-.clearfix {
-  clear: both;
-  display: block;
-}
-
-.left {
-  margin-top: 10px;
-  display: block;
-  float: left;
-  padding: 5px;
-}
-
-.right {
-  margin-top: 10px;
-  display: block;
-  float: right;
-  padding: 5px;
-}
+}*/
 
 /****************************/
 /****** Yellow Content ******/
 /****************************/
 
 .songs {
-  float: right;
-  margin-right: 7.5%;
   background-color: #FEFAC0;
   border: black solid 2px;
-  width: 58%;
 }
 
 .songs h2 {
@@ -197,22 +172,12 @@ input[type=range]::-ms-track {
 /****************************/
 
 .addSongs {
-  display: inline-block;
-  width: 40%;
-  margin: 0 19%;
+  width: 45%;
+  margin: 0 auto;
+  input{
+    margin: 10px 0;
+  }
 }
-.addSongs input {
-  border: 2px solid black;
-  float: right;
-  margin: 10px 19% 10px 0;
-}
-
-.addSongs label {
-  float: left;
-  margin: 10px 0 10px 19%;
-}
-
-
 
 select {
     height: 25px;

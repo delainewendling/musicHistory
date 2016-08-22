@@ -33,7 +33,8 @@ $(document).ready(()=>{
     $('.more').on('click', showMoreSongs);
   }
 
-  function addSong (){
+  function addSong (e){
+    e.preventDefault();
       var $songTitle = $songForm.find("#songName").val();
       var $artist = $songForm.find("#artist").val();
       var $album= $songForm.find("#album").val();
