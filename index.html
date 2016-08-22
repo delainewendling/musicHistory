@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -13,7 +14,7 @@
 <!-- Navigation Bar -->
   <nav class="navBar">
     <ul>
-      <li> <a href="#" id="listMusic"> List Music | </a> </li>
+      <li> <a href="#" id="listMusic" class="selected"> List Music | </a> </li>
       <li> <a href="#addMusicView" id="addMusic"> Add Music </a></li>
     </ul>
   </nav>
@@ -42,22 +43,22 @@
       <!-- Artist Options -->
       <label for="artist" class="label"> Artist: </label>
       <select id="artist" name="artist" class="field">
-        <option value="FGL"> Florida Georgia Line </option>
-        <option value="jonBellion"> Jon Bellion </option>
-        <option value="coldplay"> Coldplay </option>
-        <option value="taylorSwift"> Taylor Swift </option>
+        <option value="jonBellion" class="artist"> Jon Bellion </option>
+        <option value="FGL" class="artist"> Florida Georgia Line </option>
+        <option value="coldplay" class="artist"> Coldplay </option>
+        <option value="taylorSwift" class="artist"> Taylor Swift </option>
         <option value="hillsong"> Hillsong United</option>
       </select> <br>
       <!-- Album Options -->
       <label for="album" class="label"> Album: </label>
       <select id="album" name="album" class="field">
+        <!-- Jon Bellion Albums  -->
+        <option value="album1" class="jonBellion"> The Definition </option>
+        <option value="album2" class="jonBellion"> The Human Condition  </option>
         <!-- FGL Albums -->
         <option value="album1" class="FGL"> Here's to the Good Times </option>
         <option value="album2" class="FGL"> Anything Goes </option>
         <option value="album3" class="FGL"> Dig Your Roots </option>
-        <!-- Jon Bellion Albums  -->
-        <option value="album1" class="jonBellion"> The Definition </option>
-        <option value="album2" class="jonBellion"> The Human Condition  </option>
         <!-- Coldplay Albums -->
         <option value="album1" class="coldplay"> Parachutes </option>
         <option value="album2" class="coldplay"> A Rush of Blood to the Head </option>
@@ -102,24 +103,24 @@
  <!-- This section shows the songs -->
   <section class="songs" id="songContainer">
     <script id="songTemplate" type="text/mustache">
-       <div class="songList">
+       <!-- <div class="songList"> -->
         {{#songs}}
+        <div class="song">
         <h2> {{songTitle}} </h2>
         <span class="songStats"> {{artist}} | </span>
         <span class="songStats"> {{album}} | </span>
         <span class="songStats"> {{genre}} </span>
         <button class="deleteBtn"> Delete </button>
+        </div>
         {{/songs}}
         <button class='more songButton'> More > </button>
-      </div>
+      <!-- </div> -->
     </script>
   </section>
 </article>
 <footer></footer>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/mustache.js/mustache.min.js"></script>
-<script type="text/javascript" src="load.js"></script>
-<script type="text/javascript" src="DOMHandler.js"></script>
-<script type="text/javascript" src="controller.js"></script>
+<script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="lib/bower_components/mustache.js/mustache.min.js"></script>
+<script type="text/javascript" src="dist/app.js"></script>
 </body>
 </html>
