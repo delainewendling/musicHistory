@@ -8,8 +8,8 @@ var $artistDropDown = $dropDown.find('.artist');
 
 hideAlbums();
 //Bind events
-$(".dropdown-artist li a").click(findArtist);
-$(".dropdown-album li a").click(filterAlbums);
+// $(".dropdown-artist li a").click(findArtist);
+// $(".dropdown-album li a").click(filterAlbums);
 
 //Want to hide the album choices until someone has chosen an artist
 function hideAlbums(){
@@ -21,7 +21,7 @@ function findArtist (e){
   artists[`load${artistName}`]()
   .then((songs)=>{
     $("#songContainer").html("");
-    controller(songs);
+    // controller(songs);
     artistAlbums(artistName);
   });
 }

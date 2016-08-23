@@ -1,14 +1,15 @@
 "use strict";
 $(document).ready(()=>{
-var getSongs = require('./load.js'),
-    DOMInteraction = require('./DOMHandler.js'),
+var DOMInteraction = require('./DOMHandler.js'),
     controller = require('./controller.js'),
+    database = require('./dbInteraction.js'),
+    template = require('./template.js'),
     filter = require('./filter.js');
 
  //Loads songs to the page  upon load
-  getSongs.loadjonBellion()
+  database.getSongs()
   .then((data)=>{
-    console.log("Hello, I'm running");
-    controller(data);
+    console.log("Hello, I'm running", data);
+    template(data);
   });
 });
