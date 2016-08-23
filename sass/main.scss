@@ -192,14 +192,17 @@ input[type=range]::-ms-track {
   }
 }
 
-select {
-  height: 25px;
-  border-radius: 8px;
-  @include border(black, solid, 2px);
+.dropdown-btn {
   background-color: #fff;
+  border-radius: 8px;
   font-size: .85em;
   cursor: pointer;
-  max-width: 100%;
+  @include border(black, solid, 2px);
+  margin: 15px;
+  &:hover {
+    @include border(black, solid, 2px);
+    background-color: #fff;
+  }
 }
 
 input[type="checkbox"] {

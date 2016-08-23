@@ -1,15 +1,7 @@
-$(document).ready(()=>{
-  "use strict";
+"use strict";
   //required files for Browserify
   var getSongs = require('./load.js'),
       DOMInteraction = require('./DOMHandler.js');
-
-  //Loads songs to the page  upon load
-  getSongs.loadSongs()
-  .then((data)=>{
-    console.log("Hello, I'm running");
-    insertSongs(data);
-  });
 
   var arrayOfSongs = [];
   //cache variables for DOM printout
@@ -35,10 +27,10 @@ $(document).ready(()=>{
 
   function addSong (e){
     e.preventDefault();
-      var $songTitle = $songForm.find("#songName").val();
-      var $artist = $songForm.find("#artist").val();
-      var $album= $songForm.find("#album").val();
-      var $genre = $songForm.find("#genre").val();
+      var $songTitle = $songForm.find("#newSongName").val();
+      var $artist = $songForm.find("#newArtist").val();
+      var $album= $songForm.find("#newAlbum").val();
+      var $genre = $songForm.find("#newGenre").val();
       getSongs.loadSongs()
       .then((data)=>{
         arrayOfSongs = data.songs;
@@ -62,7 +54,9 @@ $(document).ready(()=>{
       $target.append("<button class='less songButton'> < Less </button>");
     });
   }
-});
+module.exports = insertSongs;
+
+
 
 
 

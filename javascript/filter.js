@@ -1,19 +1,31 @@
 "use strict";
-
+$(document).ready(()=>{
+var artists = require('./load.js'),
+    controller = require('./controller.js');
 //cache variables
 var $dropDown = $(".songForm");
 var $artistDropDown = $dropDown.find('.artist');
-var $artistSelection = $dropDown.find("#artist option");
+
 //Bind events
-$artistSelection.on('change', showArtists);
+$(".dropdown-artist li a").click(findArtist);
 
-function showArtists (){
-  
+//figures out the id of the artist chosen and then loads the songs from that artist in the DOM
+function findArtist (e){
+  let artistName = e.currentTarget.id;
+  artists[`load${artistName}`]()
+  .then((songs)=>{
+    $("#songContainer").html("");
+    controller(songs);
+    artistAlbums(artistName);
+  });
 }
-function artistAlbums (){
-  console.log("changed");
+
+function artistAlbums (artistName){
   console.log("clicked on", $artistDropDown.val());
-
 }
+});
+
+
+
 
 

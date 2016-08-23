@@ -1,28 +1,61 @@
 "use strict";
 
-var result = {};
-var moreSongs = [];
+let jonBellion = {};
+let fgl = {};
+let coldplay = {};
+let laurenDaigle = {};
+let hillsong = {};
 
-function loadSongs (){
+function loadjonBellion (){
   return new Promise(function (resolve, reject){
-    $.getJSON('JSON/songInfo.json')
+    $.getJSON('JSON/jonBellion.json')
        .then((res) => {
-        result = res;
-        resolve(result);
+        jonBellion = res;
+        resolve(jonBellion);
     });
   });
 }
 
-function loadMoreSongs (){
+function loadFGL (){
   return new Promise(function (resolve, reject){
-    $.getJSON('JSON/moreSongs.json')
+    $.getJSON('JSON/fgl.json')
        .then((res) => {
-        moreSongs = res;
-        resolve(moreSongs);
+        fgl = res;
+        resolve(fgl);
     });
   });
 }
 
-module.exports = {loadSongs, loadMoreSongs};
+function loadcoldplay (){
+  return new Promise(function (resolve, reject){
+    $.getJSON('JSON/coldplay.json')
+       .then((res) => {
+        coldplay = res;
+        resolve(coldplay);
+    });
+  });
+}
+
+function loadlaurenDaigle (){
+  return new Promise(function (resolve, reject){
+    $.getJSON('JSON/laurenDaigle.json')
+       .then((res) => {
+        laurenDaigle = res;
+        resolve(laurenDaigle);
+    });
+  });
+}
+
+function loadhillsong (){
+  return new Promise(function (resolve, reject){
+    $.getJSON('JSON/hillsong.json')
+       .then((res) => {
+        hillsong = res;
+        resolve(hillsong);
+    });
+  });
+}
+
+module.exports = {loadjonBellion, loadFGL, loadcoldplay, loadlaurenDaigle, loadhillsong};
 
 

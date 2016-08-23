@@ -27,19 +27,19 @@
   <form class="form-inline addSongs">
     <div class="row form-group">
       <label for="songName" class="first"> Song Name: </label>
-      <input type="text" name="songName" id="songName" class="first">
+      <input type="text" name="songName" id="newSongName" class="first">
     </div><br>
     <div class="row form-group">
       <label for="artist" class="second"> Artist: </label>
-      <input type="text" name="artist" id="artist" class="second">
+      <input type="text" name="artist" id="newArtist" class="second">
     </div><br>
     <div class="row form-group">
       <label for="album" class="third"> Album: </label>
-      <input type="text" name="album" id="album" class="third">
+      <input type="text" name="album" id="newAlbum" class="third">
     </div><br>
     <div class="row form-group">
       <label for="genre" class="third"> Genre: </label>
-      <input type="text" name="genre" id="genre" class="third">
+      <input type="text" name="genre" id="newGenre" class="third">
     </div><br>
     <div class="row">
       <button id="submit"> Add </button>
@@ -51,45 +51,76 @@
 <div class="row page" id="listMusicView">
 <div class="col-xs-offset-1 col-xs-10">
   <div class="col-xs-5">
-    <form action="" class="songForm songSelection">
+    <div class="songForm songSelection">
     <!-- Song Length -->
-      <label for="songLength" class="label"> Song length: </label>
-      <input type="range" name="songLength" id="songLength" class="field"> <br>
-      <!-- Artist Options -->
-      <label for="artist" class="label"> Artist: </label>
-      <select id="artist" name="artist" class="field">
-        <option value="jonBellion" class="artist" id="jonBellion"> Jon Bellion </option>
-        <option value="FGL" class="artist" id="FGL"> Florida Georgia Line </option>
-        <option value="coldplay" class="artist" id="coldplay"> Coldplay </option>
-        <option value="laurenDaigle" class="artist" id="laurenDaigle"> Lauren Daigle </option>
-        <option value="hillsong" class="artist" id="hillsong"> Hillsong United</option>
-      </select> <br>
-      <!-- Album Options -->
-      <label for="album" class="label"> Album: </label>
-      <select id="album" name="album" class="field">
-        <!-- Jon Bellion Albums  -->
-        <option value="album1" class="jonBellion"> Translations Through Speakers </option>
-        <option value="album1" class="jonBellion"> The Separation </option>
-        <option value="album1" class="jonBellion"> The Definition </option>
-        <option value="album2" class="jonBellion"> The Human Condition  </option>
-        <!-- FGL Albums -->
-        <option value="album1" class="FGL"> Here's to the Good Times </option>
-        <option value="album2" class="FGL"> Anything Goes </option>
-        <option value="album3" class="FGL"> Dig Your Roots </option>
-        <!-- Coldplay Albums -->
-        <option value="album1" class="coldplay"> Parachutes </option>
-        <option value="album2" class="coldplay"> A Rush of Blood to the Head </option>
-        <option value="album3" class="coldplay"> X&amp;Y </option>
-        <option value="album4" class="coldplay"> Mylo Xyloto </option>
-        <option value="album5" class="coldplay"> Ghost Stories </option>
-        <option value="album6" class="coldplay"> A Head Full of Dreams </option>
-        <!-- Lauren Daigle Albums -->
-        <option value="album1" class="taylorSwift"> How Can it Be </option>
-        <!-- Hillsong United Albums -->
-        <option value="album1" class="hillsong"> Aftermath </option>
-        <option value="album2" class="hillsong"> Zion </option>
-        <option value="album3" class="hillsong"> Empires </option>
-      </select> <br>
+    <label for="songLength" class="label"> Song length: </label>
+    <input type="range" name="songLength" id="songLength" class="field"> <br>
+    <!-- Artist Options -->
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggled dropdown-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Artists:
+      <span class="caret"></span>
+      </button>
+      <ul class="dropdown-artist dropdown-menu">
+        <li><a href="#" class="artist" id="jonBellion">Jon Bellion</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#" class="artist" id="FGL">Florida Georgia Line</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#" class="artist" id="coldplay">Coldplay</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#" class="artist" id="laurenDaigle">Lauren Daigle</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#" class="artist" id="hillsong">Hillsong United</a></li>
+      </ul>
+    </div>
+    <!-- Album Options -->
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle dropdown-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Albums:
+      <span class="caret"></span>
+      </button>
+      <ul class="dropdown-album dropdown-menu">
+      <!-- Jon Bellion Albums  -->
+      <li><a href="#" class="jonBellion album album-1">Translations Through Speakers</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="jonBellion album album-2">The Separation</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="jonBellion album album-3">The Definition</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="jonBellion album album-4">The Human Condition</a></li>
+      <li role="separator" class="divider"></li>
+      <!-- FGL Albums -->
+       <li><a href="#" class="FGL album album-1">Here's to the Good Times</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="FGL album album-2"> Anything Goes</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="FGL album album-3">Dig Your Roots</a></li>
+      <li role="separator" class="divider"></li>
+      <!-- Coldplay Albums -->
+      <li><a href="#" class="coldplay album album-1">Parachutes</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="coldplay album album-2"> A Rush of Blood to the Head</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="coldplay album album-3">X&amp;Y</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="coldplay album album-4">Mylo Xyloto </a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="coldplay album album-5"> Ghost Stories</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="coldplay album album-6">A Head Full of Dreams</a></li>
+      <li role="separator" class="divider"></li>
+      <!-- Lauren Daigle Albums -->
+      <li><a href="#" class="laurenDaigle album album-1">How Can It Be</a></li>
+      <li role="separator" class="divider"></li>
+      <!-- Hillsong United Albums -->
+      <li><a href="#" class="hillsong album album-1">Aftermath</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="hillsong album album-2"> Zion</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#" class="hillsong album album-3">Empires</a></li>
+      <li role="separator" class="divider"></li>
+      </ul>
+      </div>
       <!-- Genre Options -->
       <label class="label"> Genre: </label>
       <!-- These should be on the left -->
@@ -111,7 +142,7 @@
       <label for="hip_hop" value="hip_hop"> Hip Hop </label>
       </div>
       <button type="submit" class="button"> Filter </button>
-    </form>
+    </div>
   </div>
  <!-- This section shows the songs -->
 <div class="songs col-xs-7" id="songContainer">
@@ -134,6 +165,7 @@
 </article>
 <footer></footer>
 <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="lib/bower_components/mustache.js/mustache.min.js"></script>
 <script type="text/javascript" src="dist/app.js"></script>
 </body>
