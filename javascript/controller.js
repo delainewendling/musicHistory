@@ -33,7 +33,8 @@ $(document).ready(()=>{
     $('.more').on('click', showMoreSongs);
   }
 
-  function addSong (){
+  function addSong (e){
+    e.preventDefault();
       var $songTitle = $songForm.find("#songName").val();
       var $artist = $songForm.find("#artist").val();
       var $album= $songForm.find("#album").val();
@@ -45,8 +46,6 @@ $(document).ready(()=>{
         arrayOfSongs = data.songs;
         arrayOfSongs.push({"songTitle": $songTitle, "artist": $artist, "album": $album, "genre": $genre});
         console.log("new Data", data);
-        // $target.html("");
-        debugger;
         DOMInteraction.goHome();
         insertSongs(data);
         $('input').val("");
