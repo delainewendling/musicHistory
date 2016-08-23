@@ -21,8 +21,11 @@ function findArtist (e){
 }
 
 function artistAlbums (artistName){
-  console.log("clicked on", $artistDropDown.val());
+  console.log("inside artistAlbums function", artistName);
+  $(".album").hide();
+  $(`.${artistName}`).show();
 }
+
 });
 
 
