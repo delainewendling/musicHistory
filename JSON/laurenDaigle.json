@@ -3,73 +3,85 @@
     {
       "songTitle": "First",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "How Can It Be",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Trust In You",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "My Revival",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Loyal",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Poer to Redeem (ft. All Sons & Daughters)",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Here's My Heart",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "O'Lord",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "I Am Yours",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Come Alive (Dry Bones)",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Salt & Light",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Once and for All",
       "artist": "Lauren Daigle",
-      "album": "How Can It Be",
+      "albumTitle": "How Can It Be",
+      "albumNumber": 1,
       "genre": "Christian"
     }
   ]

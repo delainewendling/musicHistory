@@ -3,409 +3,477 @@
     {
       "songTitle": "Don't Panic",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "Shiver",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "Spies",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "Sparks",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "Yellow",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "Trouble",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "Parachutes",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "High Speed",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "We Never Change",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "Everything's Not Lost",
       "artist": "Coldplay",
-      "album": "Parachutes",
+      "albumTitle": "Parachutes",
+      "albumNumber": 1,
       "genre": "Pop"
     },
     {
       "songTitle": "Politik",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "In My Place",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "God Put a Smile upon Your Face",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "The Scientist",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "Clocks",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "Daylight",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "Green Eyes",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "Warning Sign",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "A Whisper",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "A Rush of Blood to the Head",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "Amsterdam",
       "artist": "Coldplay",
-      "album": "A Rush of Blood To The Head",
+      "albumTitle": "A Rush of Blood To The Head",
+      "albumNumber": 2,
       "genre": "Pop"
     },
     {
       "songTitle": "Square One",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "What If",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "White Shadows",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "Fix You",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "Talk",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "X&Y",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "Speed of Sound",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "A Message",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "Low",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "The Hardest Part",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "Swallowed in the Sea",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "Twisted Logic",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "Til Kingdom Come",
       "artist": "Coldplay",
-      "album": "X&Y",
+      "albumTitle": "X&Y",
+      "albumNumber": 3,
       "genre": "Pop"
     },
     {
       "songTitle": "Mylo Xyloto",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Hurts Like Heaven",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Paradise",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Charlie Brown",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Us Against The World",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "M.M.I.X.",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Every Teardrop is a Waterfall",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Major Minus",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "U.F.O",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Princess of China (ft. Rihanna)",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Up in Flames",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "A Hopeful Transmission",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Don't Let It Break Your Heart",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Up with the Birds",
       "artist": "Coldplay",
-      "album": "Mylo Xyloto",
+      "albumTitle": "Mylo Xyloto",
+      "albumNumber": 4,
       "genre": "Pop"
     },
     {
       "songTitle": "Always in My Head",
       "artist": "Coldplay",
-      "album": "Ghost Stories",
+      "albumTitle": "Ghost Stories",
+      "albumNumber": 5,
       "genre": "Pop"
     },
     {
       "songTitle": "Magic",
       "artist": "Coldplay",
-      "album": "Ghost Stories",
+      "albumTitle": "Ghost Stories",
+      "albumNumber": 5,
       "genre": "Pop"
     },
     {
       "songTitle": "Ink",
       "artist": "Coldplay",
-      "album": "Ghost Stories",
+      "albumTitle": "Ghost Stories",
+      "albumNumber": 5,
       "genre": "Pop"
     },
     {
       "songTitle": "True Love",
       "artist": "Coldplay",
-      "album": "Ghost Stories",
+      "albumTitle": "Ghost Stories",
+      "albumNumber": 5,
       "genre": "Pop"
     },
     {
       "songTitle": "Midnight",
       "artist": "Coldplay",
-      "album": "Ghost Stories",
+      "albumTitle": "Ghost Stories",
+      "albumNumber": 5,
       "genre": "Pop"
     },
     {
       "songTitle": "Another's Arms",
       "artist": "Coldplay",
-      "album": "Ghost Stories",
+      "albumTitle": "Ghost Stories",
+      "albumNumber": 5,
       "genre": "Pop"
     },
     {
       "songTitle": "Oceans",
       "artist": "Coldplay",
-      "album": "Ghost Stories",
+      "albumTitle": "Ghost Stories",
+      "albumNumber": 5,
       "genre": "Pop"
     },
     {
       "songTitle": "A Sky Full of Stars",
       "artist": "Coldplay",
-      "album": "Ghost Stories",
+      "albumTitle": "Ghost Stories",
+      "albumNumber": 5,
       "genre": "Pop"
     },
     {
       "songTitle": "O",
       "artist": "Coldplay",
-      "album": "Ghost Stories",
+      "albumTitle": "Ghost Stories",
+      "albumNumber": 5,
       "genre": "Pop"
     },
     {
       "songTitle": "A Head Full of Dreams",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Birds",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Hymn for the Weekend",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Everglow",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Adventure of a Lifetime",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Fun (ft. Tove Lo)",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Kaleidoscope",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Army of One",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Amazing Day",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Colous Spectrum",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     },
     {
       "songTitle": "Up & Up",
       "artist": "Coldplay",
-      "album": "A Head Full of Dreams",
+      "albumTitle": "A Head Full of Dreams",
+      "albumNumber": 6,
       "genre": "Pop"
     }
   ]

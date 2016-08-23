@@ -3,229 +3,267 @@
     {
       "songTitle": "Take Heart",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Go",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Like an Avalanche",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Rhythms of Grace",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Aftermath",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "B.E. (interlude)",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Bones",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Father",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Nova",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Light Will Shine",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Search My Heart",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Awakening",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Search My Heart",
       "artist": "Hillsong",
-      "album": "Aftermath",
+      "albumTitle": "Aftermath",
+      "albumNumber": 1,
       "genre": "Christian"
     },
     {
       "songTitle": "Relentless",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Up in Arms",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Scandal of Grace",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Oceans (Where Feet May Fail",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Stay and Wait",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Mercy Mercy",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Love is War",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Nothing Like Your Love",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Zion (interlude)",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Heart Beats",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "A Million Suns",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Tapestry",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "King of Heaven",
       "artist": "Hillsong",
-      "album": "Zion",
+      "albumTitle": "Zion",
+      "albumNumber": 2,
       "genre": "Christian"
     },
     {
       "songTitle": "Here Now (Madness)",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Say The Word",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Heart Like Heaven",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Touch The Sky",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Street Called Mercy",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "When I Lost My Heart to Your (Hallelujah)",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Even When It Hurts (Praise Song)",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Prince of Peace",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Empires",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Rule",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Captain",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     },
     {
       "songTitle": "Closer Than You Know",
       "artist": "Hillsong",
-      "album": "Empires",
+      "albumTitle": "Empires",
+      "albumNumber": 3,
       "genre": "Christian"
     }
   ]
