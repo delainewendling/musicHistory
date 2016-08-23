@@ -5,7 +5,7 @@ var $dropDown = $(".songForm");
 var $artistDropDown = $dropDown.find('.artist');
 var $artistSelection = $dropDown.find("#artist option");
 //Bind events
-$artistSelection.on('change', artistAlbums);
+$artistSelection.on('change', showArtists);
 
 function artistAlbums (){
   console.log("changed");

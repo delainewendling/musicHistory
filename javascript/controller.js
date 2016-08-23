@@ -46,8 +46,6 @@ $(document).ready(()=>{
         arrayOfSongs = data.songs;
         arrayOfSongs.push({"songTitle": $songTitle, "artist": $artist, "album": $album, "genre": $genre});
         console.log("new Data", data);
-        // $target.html("");
-        debugger;
         DOMInteraction.goHome();
         insertSongs(data);
         $('input').val("");

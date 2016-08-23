@@ -1,0 +1,7 @@
+@mixin border ($color, $type, $width){
+  border: $color $type $width;
+}
+
+@mixin center-margin ($top, $sides){
+  margin: $top $sides;
+}
