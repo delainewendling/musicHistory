@@ -4,7 +4,6 @@
 var songTemplate = require('../lib/templates/data-template.hbs'),
     database = require('./dbInteraction.js');
 
-
 //Add the view to the DOM (the rendered view )
 function insertSongs (songData){
   $("#songContainer").html(songTemplate(songData));

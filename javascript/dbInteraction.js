@@ -20,18 +20,18 @@ function deleteSong(songId){
     });
   });
 }
-// function addSong (songformObj){
-//   return new Promise (function (resolve, reject){
-//     $.ajax({
-//       url: 'https://music-history-b5816.firebaseio.com/laurenDaigle.json',
-//       type: 'POST',
-//       data: JSON.stringify(songFormObj),
-//       dataType: "json"
-//       //firebase gives us a unique id for everything we add to the database
-//     }).done(function(songId){
-//       resolve(songId);
-//     });
-//   });
-// }
+function addSong (songformObj){
+  return new Promise (function (resolve, reject){
+    $.ajax({
+      url: 'https://music-history-b5816.firebaseio.com/songs.json',
+      type: 'POST',
+      data: JSON.stringify(songformObj),
+      dataType: "json"
+      //firebase gives us a unique id for everything we add to the database
+    }).done(function(songId){
+      resolve(songId);
+    });
+  });
+}
 
-module.exports = {getSongs, deleteSong};
+module.exports = {getSongs, deleteSong, addSong};
