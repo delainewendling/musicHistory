@@ -12,8 +12,10 @@ function insertSongs (songData){
 }
 
 function deleteSong (e){
-  database.deleteSong(e.currentTarget.id);
-  reload();
+  database.deleteSong(e.currentTarget.id)
+  .then(()=>{
+    reload();
+  });
 }
 
 function reload(){
