@@ -26,9 +26,9 @@ $(document).ready(()=>{
 
   //Insert the songs to the DOM
   function insertSongs(data) {
-    console.log("what's being printed?", data)
+    console.log("what's being printed?", data);
     var rendered = Mustache.to_html($template, data);
-    $target.html(rendered);
+    $target.append(rendered);
     $('.deleteBtn').on('click', deleteSong);
     $('.more').on('click', showMoreSongs);
   }
@@ -41,12 +41,10 @@ $(document).ready(()=>{
       var $genre = $songForm.find("#genre").val();
       getSongs.loadSongs()
       .then((data)=>{
-        console.log("data after promise", data);
-        console.log("array?", data.songs);
         arrayOfSongs = data.songs;
         arrayOfSongs.push({"songTitle": $songTitle, "artist": $artist, "album": $album, "genre": $genre});
-        console.log("new Data", data);
         DOMInteraction.goHome();
+        $target.html("");
         insertSongs(data);
         $('input').val("");
       });
@@ -64,7 +62,6 @@ $(document).ready(()=>{
       $target.append("<button class='less songButton'> < Less </button>");
     });
   }
-
 });
 
 

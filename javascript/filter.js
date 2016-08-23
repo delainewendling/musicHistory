@@ -7,6 +7,9 @@ var $artistSelection = $dropDown.find("#artist option");
 //Bind events
 $artistSelection.on('change', showArtists);
 
+function showArtists (){
+  
+}
 function artistAlbums (){
   console.log("changed");
   console.log("clicked on", $artistDropDown.val());

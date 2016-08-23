@@ -24,23 +24,27 @@
 </div>
 </header>
 <article id="addMusicView" class="page hidden">
-  <section class="addSongs">
-    <div class="col-xs-6">
-      <label for="songName" class="first"> Song Name: </label><br>
-      <label for="artist" class="second"> Artist: </label><br>
-      <label for="album" class="third"> Album: </label><br>
-      <label for="genre" class="third"> Genre: </label><br>
-    </div>
-    <div class="col-xs-6">
+  <form class="form-inline addSongs">
+    <div class="row form-group">
+      <label for="songName" class="first"> Song Name: </label>
       <input type="text" name="songName" id="songName" class="first">
+    </div><br>
+    <div class="row form-group">
+      <label for="artist" class="second"> Artist: </label>
       <input type="text" name="artist" id="artist" class="second">
+    </div><br>
+    <div class="row form-group">
+      <label for="album" class="third"> Album: </label>
       <input type="text" name="album" id="album" class="third">
+    </div><br>
+    <div class="row form-group">
+      <label for="genre" class="third"> Genre: </label>
       <input type="text" name="genre" id="genre" class="third">
-    </div> 
+    </div><br>
     <div class="row">
-      <button id="submit" class="clearfix button"> Add </button>
+      <button id="submit"> Add </button>
     </div>
-  </section>
+  </form>
 </article>
 
 <!-- Blue left side bar that allows user to select artist, album, etc -->
@@ -54,16 +58,18 @@
       <!-- Artist Options -->
       <label for="artist" class="label"> Artist: </label>
       <select id="artist" name="artist" class="field">
-        <option value="jonBellion" class="artist"> Jon Bellion </option>
-        <option value="FGL" class="artist"> Florida Georgia Line </option>
-        <option value="coldplay" class="artist"> Coldplay </option>
-        <option value="taylorSwift" class="artist"> Taylor Swift </option>
-        <option value="hillsong"> Hillsong United</option>
+        <option value="jonBellion" class="artist" id="jonBellion"> Jon Bellion </option>
+        <option value="FGL" class="artist" id="FGL"> Florida Georgia Line </option>
+        <option value="coldplay" class="artist" id="coldplay"> Coldplay </option>
+        <option value="laurenDaigle" class="artist" id="laurenDaigle"> Lauren Daigle </option>
+        <option value="hillsong" class="artist" id="hillsong"> Hillsong United</option>
       </select> <br>
       <!-- Album Options -->
       <label for="album" class="label"> Album: </label>
       <select id="album" name="album" class="field">
         <!-- Jon Bellion Albums  -->
+        <option value="album1" class="jonBellion"> Translations Through Speakers </option>
+        <option value="album1" class="jonBellion"> The Separation </option>
         <option value="album1" class="jonBellion"> The Definition </option>
         <option value="album2" class="jonBellion"> The Human Condition  </option>
         <!-- FGL Albums -->
@@ -74,15 +80,11 @@
         <option value="album1" class="coldplay"> Parachutes </option>
         <option value="album2" class="coldplay"> A Rush of Blood to the Head </option>
         <option value="album3" class="coldplay"> X&amp;Y </option>
-        <option value="album4" class="coldplay"> Viva la Vida </option>
-        <option value="album5" class="coldplay"> Mylo Xyloto </option>
-        <option value="album6" class="coldplay"> Ghost Stories </option>
-        <option value="album7" class="coldplay"> A Head Full of Dreams </option>
-        <!-- Taylor Swift Albums -->
-        <option value="album1" class="taylorSwift"> Fearless </option>
-        <option value="album2" class="taylorSwift"> Speak Now </option>
-        <option value="album3" class="taylorSwift"> Red </option>
-        <option value="album4" class="taylorSwift"> 1989 </option>
+        <option value="album4" class="coldplay"> Mylo Xyloto </option>
+        <option value="album5" class="coldplay"> Ghost Stories </option>
+        <option value="album6" class="coldplay"> A Head Full of Dreams </option>
+        <!-- Lauren Daigle Albums -->
+        <option value="album1" class="taylorSwift"> How Can it Be </option>
         <!-- Hillsong United Albums -->
         <option value="album1" class="hillsong"> Aftermath </option>
         <option value="album2" class="hillsong"> Zion </option>
@@ -108,7 +110,7 @@
       <input type="checkbox" name="hip_hop" id="hip_hop">
       <label for="hip_hop" value="hip_hop"> Hip Hop </label>
       </div>
-      <button type="submit" class="clearfix button"> Filter </button>
+      <button type="submit" class="button"> Filter </button>
     </form>
   </div>
  <!-- This section shows the songs -->
