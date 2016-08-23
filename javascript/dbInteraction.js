@@ -9,6 +9,17 @@ function getSongs (callback){
     });
   });
 }
+
+function deleteSong(songId){
+  return new Promise (function (resolve, reject){
+    $.ajax({
+      url: `https://music-history-b5816.firebaseio.com/songs/${songId}.json`,
+      method: "DELETE"
+    }).done(function(){
+      resolve();
+    });
+  });
+}
 // function addSong (songformObj){
 //   return new Promise (function (resolve, reject){
 //     $.ajax({
@@ -23,15 +34,4 @@ function getSongs (callback){
 //   });
 // }
 
-// function deleteSong (songId){
-//   return new Promise (function (resolve, reject){
-//     $.ajax({
-//       url: `https://music-history-b5816.firebaseio.com/songs/${songId}.json`,
-//       method: "DELETE"
-//     }).done(function(){
-//       resolve();
-//     });
-//   });
-// }
-
-module.exports = {getSongs};
+module.exports = {getSongs, deleteSong};

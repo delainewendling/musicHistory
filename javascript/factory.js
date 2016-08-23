@@ -9,7 +9,6 @@ var DOMInteraction = require('./DOMHandler.js'),
  //Loads songs to the page  upon load
   database.getSongs()
   .then((data)=>{
-    console.log("Hello, I'm running", data);
-    template(data);
+    template.insertSongs(data);
   });
 });

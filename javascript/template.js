@@ -1,14 +1,25 @@
 "use strict";
 
 //pull in the template
-var songTemplate = require('../lib/templates/data-template.hbs');
+var songTemplate = require('../lib/templates/data-template.hbs'),
+    database = require('./dbInteraction.js');
 
 
 //Add the view to the DOM (the rendered view )
 function insertSongs (songData){
-  $("#songContainer").append(songTemplate(songData));
+  $("#songContainer").html(songTemplate(songData));
+  $('.deleteBtn').on('click', deleteSong);
 }
 
-module.exports = insertSongs;
+function deleteSong (e){
+  database.deleteSong(e.currentTarget.id);
+  reload();
+}
+
+function reload(){
+  location.reload();
+}
+
+module.exports = {insertSongs, reload};
 
 

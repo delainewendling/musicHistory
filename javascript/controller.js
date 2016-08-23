@@ -21,7 +21,6 @@
   //   console.log("what's being printed?", data);
   //   var rendered = Mustache.to_html($template, data);
   //   $target.append(rendered);
-  //   $('.deleteBtn').on('click', deleteSong);
   //   $('.more').on('click', showMoreSongs);
   // }
 
@@ -42,9 +41,6 @@
   //     });
   // }
 
-  // function deleteSong (e) {
-  //   e.currentTarget.closest(".song").remove();
-  // }
 
   // function showMoreSongs (e) {
   //   getSongs.loadMoreSongs()
