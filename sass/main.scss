@@ -197,7 +197,7 @@ input[type=range]::-ms-track {
   input {
     margin: 15px;
   }
-  #submit {
+  #addSong, .editSong {
     display: block;
     @include border(black, solid, 2px);
     border-radius: 5px;

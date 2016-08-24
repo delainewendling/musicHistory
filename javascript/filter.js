@@ -1,14 +1,14 @@
 "use strict";
 $(document).ready(()=>{
-var artists = require('./load.js');
+var artists = require('./dbInteraction.js');
 //cache variables
 var $dropDown = $(".songForm");
 var $artistDropDown = $dropDown.find('.artist');
 
 hideAlbums();
 //Bind events
-// $(".dropdown-artist li a").click(findArtist);
-// $(".dropdown-album li a").click(filterAlbums);
+$(".dropdown-artist li a").click(findArtist);
+$(".dropdown-album li a").click(filterAlbums);
 
 //Want to hide the album choices until someone has chosen an artist
 function hideAlbums(){
@@ -17,12 +17,13 @@ function hideAlbums(){
 //figures out the id of the artist chosen and then loads the songs from that artist in the DOM
 function findArtist (e){
   let artistName = e.currentTarget.id;
-  artists[`load${artistName}`]()
+  artists.getSongs(){
   .then((songs)=>{
+    for ()
     $("#songContainer").html("");
     // controller(songs);
-    artistAlbums(artistName);
-  });
+  artistAlbums(artistName);
+  // });
 }
 
 function artistAlbums (artistName){

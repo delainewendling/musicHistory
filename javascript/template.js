@@ -7,8 +7,10 @@ var songTemplate = require('../lib/templates/data-template.hbs'),
 
 //Bind events
 $(document).on('click', '.deleteBtn', deleteSong);
-$(document).on('click', '.editBtn', editSong);
-$(document).on('click', '#submit', addSong);
+$(document).on('click', '.editBtn', getSong);
+$(document).on('click', '#addSong', addSong);
+$(document).on('click', '.editSong', saveEditedSong);
+
 
 function addSong (e){
   e.preventDefault();
@@ -35,14 +37,25 @@ function deleteSong (e){
   });
 }
 
-function editSong (e){
-  DOMInt.goToEdit();
+function getSong (e){
   let songToEdit = $(e.currentTarget).attr('key');
-  console.log("song", songToEdit);
+  DOMInt.goToEdit(songToEdit);
   database.getSong(songToEdit)
   .then((song)=>{
     console.log("song", song);
     DOMInt.fillForm(song);
+  });
+}
+
+function saveEditedSong (e){
+  e.preventDefault();
+  let songObj = buildSongObj(),
+      songId = $(e.currentTarget).attr("id");
+  console.log("Song Object", songObj);
+  console.log("Song Id", songId);
+  database.saveEdit(songObj, songId)
+  .then((data)=>{
+    reload();
   });
 }
 

@@ -47,7 +47,7 @@ function getSong(songId) {
   }); //end of promise
 }
 
-function editSong(songFormObj, songId) {
+function saveEdit(songFormObj, songId) {
   return new Promise ((resolve, reject)=>{
     $.ajax({
       url: `https://music-history-b5816.firebaseio.com/songs/${songId}.json`,
@@ -59,4 +59,4 @@ function editSong(songFormObj, songId) {
   }); //end of promise
 }
 
-module.exports = {getSongs, deleteSong, addSong, getSong, editSong};
+module.exports = {getSongs, deleteSong, addSong, getSong, saveEdit};

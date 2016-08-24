@@ -20,9 +20,11 @@
       $addMusic.removeClass("selected");
   }
 
-  function goToEdit (){
+  function goToEdit (songId){
     $('#addMusicView').removeClass("hidden").addClass("selected");
     $('#listMusicView').addClass("hidden").removeClass("selected");
+    $('#addSong').hide();
+    $('.addSongs').append(`<button class="editSong" id="${songId}"> Edit </button>`);
   }
 
   //Navigate to the page you want
@@ -37,7 +39,6 @@
   }
 
   function fillForm(song) {
-    console.log("song", song.songTitle);
     $("#newSongName").val(song.songTitle);
     $("#newArtist").val(song.artist);
     $("#newAlbum").val(song.albumTitle);
