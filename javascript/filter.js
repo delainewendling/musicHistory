@@ -1,7 +1,6 @@
 "use strict";
 $(document).ready(()=>{
-var artists = require('./load.js'),
-    controller = require('./controller.js');
+var artists = require('./load.js');
 //cache variables
 var $dropDown = $(".songForm");
 var $artistDropDown = $dropDown.find('.artist');

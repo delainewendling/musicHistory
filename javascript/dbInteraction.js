@@ -16,6 +16,7 @@ function deleteSong(songId){
       url: `https://music-history-b5816.firebaseio.com/songs/${songId}.json`,
       method: "DELETE"
     }).done(function(){
+      console.log("song ID", songId);
       resolve();
     });
   });
@@ -34,4 +35,28 @@ function addSong (songformObj){
   });
 }
 
-module.exports = {getSongs, deleteSong, addSong};
+function getSong(songId) {
+  return new Promise ((resolve, reject)=>{
+    $.ajax({
+      url: `https://music-history-b5816.firebaseio.com/songs/${songId}.json`
+    }).done((song)=>{
+      resolve(song);
+    }).fail((error)=>{
+      reject(error);
+    });
+  }); //end of promise
+}
+
+function editSong(songFormObj, songId) {
+  return new Promise ((resolve, reject)=>{
+    $.ajax({
+      url: `https://music-history-b5816.firebaseio.com/songs/${songId}.json`,
+      method: "PUT",
+      data: JSON.stringify(songFormObj)
+    }).done((data)=>{
+      resolve(data);
+    });
+  }); //end of promise
+}
+
+module.exports = {getSongs, deleteSong, addSong, getSong, editSong};

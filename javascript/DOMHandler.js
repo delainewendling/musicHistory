@@ -20,6 +20,11 @@
       $addMusic.removeClass("selected");
   }
 
+  function goToEdit (){
+    $('#addMusicView').removeClass("hidden").addClass("selected");
+    $('#listMusicView').addClass("hidden").removeClass("selected");
+  }
+
   //Navigate to the page you want
   function showPage (id){
     if(id) {
@@ -31,5 +36,13 @@
     }
   }
 
-module.exports = {goHome, showPage};
+  function fillForm(song) {
+    console.log("song", song.songTitle);
+    $("#newSongName").val(song.songTitle);
+    $("#newArtist").val(song.artist);
+    $("#newAlbum").val(song.albumTitle);
+    $("#newGenre").val(song.genre);
+  }
+
+module.exports = {goHome, goToEdit, fillForm};
 
