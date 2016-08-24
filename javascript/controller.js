@@ -38,14 +38,6 @@
     });
   }
 
-  //Insert the songs to the DOM
-  // function insertSongs(data) {
-  //   console.log("what's being printed?", data);
-  //   var rendered = Mustache.to_html($template, data);
-  //   $target.append(rendered);
-  //   $('.more').on('click', showMoreSongs);
-  // }
-
   // function showMoreSongs (e) {
   //   getSongs.loadMoreSongs()
   //   .then((data)=>{

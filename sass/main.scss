@@ -29,7 +29,7 @@ body {
 /****************************/
 
 .navBar {
-  background-color: #FFB4B0;
+  background-color: $pinkColor;
   margin: 20px auto 10px;
   height: 53px;
   @include border(black, solid, 2px);
@@ -91,17 +91,24 @@ body {
 }
 
 .deleteBtn {
-  background-color: white;
+  background-color: $pinkColor;
   @include border(black, solid, 2px);
   border-radius: 3px;
   &:hover {
+  background-color: white;
+  }
+}
+
+.editBtn {
   background-color: $aquaColor;
-  color: white;
+  @include border(black, solid, 2px);
+  border-radius: 3px;
+  &:hover {
+  background-color: white;
   }
 }
 
 .songButton {
-  // display: block;
   @include border(black, solid, 2px);
   border-radius: 3px;
   margin: 20px;

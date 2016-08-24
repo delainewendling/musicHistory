@@ -71,12 +71,18 @@ body {
     padding-left: 10px; }
 
 .deleteBtn {
-  background-color: white;
+  background-color: #FFB4B0;
   border: black solid 2px;
   border-radius: 3px; }
   .deleteBtn:hover {
-    background-color: #4DD7FA;
-    color: white; }
+    background-color: white; }
+
+.editBtn {
+  background-color: #4DD7FA;
+  border: black solid 2px;
+  border-radius: 3px; }
+  .editBtn:hover {
+    background-color: white; }
 
 .songButton {
   border: black solid 2px;
